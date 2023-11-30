@@ -1,7 +1,10 @@
 class Solution(object):
     def checkPowersOfThree(self, n):
-        while n > 0:
-            if n % 3 == 2:
-                return False
-            n = n // 3
-        return True
+        for i in range(17,-1,-1):
+            p = 3**i
+            if n>= p:
+                n -= p
+            if n== 0:
+                return True
+    
+        return False
