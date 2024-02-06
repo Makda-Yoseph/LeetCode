@@ -6,7 +6,7 @@ class Solution:
         for i in range(len(s)):
             if s[r] == '0':
                 ctz +=1
-            elif s[r] == '1':
+            else :
                 ct +=ctz
             r -=1
         return ct
